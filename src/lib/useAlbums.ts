@@ -12,11 +12,14 @@ export function useAlbums() {
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (raw) setAlbums(JSON.parse(raw) as Album[]);
+      if (raw) {
+        const savedAlbums = JSON.parse(raw) as Album[];
+        queueMicrotask(() => setAlbums(savedAlbums));
+      }
     } catch {
       // ignore malformed storage, fall back to defaults
     }
-    setLoaded(true);
+    queueMicrotask(() => setLoaded(true));
   }, []);
 
   const saveAlbums = useCallback((next: Album[]) => {
