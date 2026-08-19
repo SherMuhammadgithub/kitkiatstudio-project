@@ -4,6 +4,8 @@ import { SocialRail } from "@/components/SocialRail";
 import { SiteFooter } from "@/components/SiteFooter";
 import { PassionSection } from "@/components/sections/PassionSection";
 import { BeliefSection } from "@/components/sections/BeliefSection";
+import { BlogSection } from "@/components/sections/BlogSection";
+import { PartnersSection } from "@/components/sections/PartnersSection";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <HeroStub />
       <PassionSection />
       <BeliefSection />
+      <BlogSection />
+      <PartnersSection />
       <SocialRail />
       <SiteFooter />
     </div>
