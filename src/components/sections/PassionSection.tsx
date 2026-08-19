@@ -7,7 +7,7 @@ export function PassionSection() {
       style={{ backgroundImage: "url(/images/parallex-bg.jpg)" }}
     >
       <div className="relative mx-auto max-w-5xl px-6 sm:px-8">
-        <h2 className="font-script text-5xl font-bold leading-tight text-accent-yellow sm:text-6xl md:text-7xl">
+        <h2 className="font-script text-5xl font-extrabold leading-tight text-accent-yellow sm:text-6xl md:text-7xl">
           Passion, Inspiration,
           <br /> Freedom &amp; Dreams
         </h2>

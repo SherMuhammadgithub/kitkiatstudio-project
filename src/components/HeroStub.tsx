@@ -27,7 +27,7 @@ export function HeroStub() {
             height={288}
             className="absolute right-4 -top-32 z-10 hidden h-56 w-56 object-contain sm:block lg:right-0 lg:-top-36 lg:h-64 lg:w-64"
           />
-          <h1 className="relative text-3xl leading-tight text-zinc-900 sm:text-4xl lg:text-5xl">
+          <h1 className="relative text-[2.25rem] leading-tight text-zinc-900 sm:text-[2.75rem] lg:text-[3.25rem]">
             Attitude defines
             <br />
             <em className="italic">Your</em> Aptitude
