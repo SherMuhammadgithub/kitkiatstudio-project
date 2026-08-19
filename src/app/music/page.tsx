@@ -1,5 +1,6 @@
 import { HeaderStub } from "@/components/HeaderStub";
 import { SiteFooter } from "@/components/SiteFooter";
+import { FadeInSection } from "@/components/FadeInSection";
 import { MusicBanner } from "@/components/sections/MusicBanner";
 import { FeaturedAlbumSection } from "@/components/sections/FeaturedAlbumSection";
 import { TracklistSection } from "@/components/sections/TracklistSection";
@@ -14,15 +15,33 @@ export default function MusicPage() {
   return (
     <div className="flex flex-1 flex-col">
       <HeaderStub />
-      <MusicBanner />
-      <FeaturedAlbumSection />
-      <TracklistSection />
-      <SecondAlbumSection />
-      <TheorySection />
-      <CollageSection />
-      <LinksSection />
-      <PrincipiumSection />
-      <LawSection />
+      <FadeInSection>
+        <MusicBanner />
+      </FadeInSection>
+      <FadeInSection>
+        <FeaturedAlbumSection />
+      </FadeInSection>
+      <FadeInSection>
+        <TracklistSection />
+      </FadeInSection>
+      <FadeInSection>
+        <SecondAlbumSection />
+      </FadeInSection>
+      <FadeInSection>
+        <TheorySection />
+      </FadeInSection>
+      <FadeInSection>
+        <CollageSection />
+      </FadeInSection>
+      <FadeInSection>
+        <LinksSection />
+      </FadeInSection>
+      <FadeInSection>
+        <PrincipiumSection />
+      </FadeInSection>
+      <FadeInSection>
+        <LawSection />
+      </FadeInSection>
       <SiteFooter />
     </div>
   );
