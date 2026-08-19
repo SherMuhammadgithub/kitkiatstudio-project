@@ -1,20 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useParallax } from "@/lib/useParallax";
-import { WaveDivider } from "../WaveDivider";
-
 export function PassionSection() {
-  const { ref, y } = useParallax(50);
-
   return (
-    <section ref={ref} className="relative overflow-hidden bg-[#c7c4bc] py-24 sm:py-32">
-      <WaveDivider color="#c7c4bc" />
-      <motion.div
-        style={{ y }}
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.3),transparent_60%),radial-gradient(circle_at_80%_70%,rgba(0,0,0,0.12),transparent_55%)]"
-      />
+    <section
+      className="relative bg-scroll bg-cover bg-center py-24 sm:py-32 lg:bg-fixed"
+      style={{ backgroundImage: "url(/images/parallex-bg.jpg)" }}
+    >
       <div className="relative mx-auto max-w-5xl px-6 sm:px-8">
         <h2 className="font-script text-4xl leading-tight text-accent-yellow sm:text-5xl md:text-6xl">
           Passion, Inspiration,

@@ -11,10 +11,14 @@ export default function Home() {
     <div className="flex flex-1 flex-col">
       <HeaderStub />
       <HeroStub />
-      <PassionSection />
+      <div className="md:grid md:grid-cols-[1fr_40px] md:items-stretch">
+        <PassionSection />
+        <div className="relative mr-4 hidden md:block lg:mr-16">
+          <SectionTabs />
+        </div>
+      </div>
       <BeliefSection />
       <SocialRail />
-      <SectionTabs />
       <SiteFooter />
     </div>
   );

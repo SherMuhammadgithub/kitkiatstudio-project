@@ -1,19 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useParallax } from "@/lib/useParallax";
-import { WaveDivider } from "../WaveDivider";
-
 export function BeliefSection() {
-  const { ref, y } = useParallax(70);
-
   return (
-    <section ref={ref} className="relative overflow-hidden bg-black py-20 sm:py-28">
-      <WaveDivider color="#000000" flip />
-      <motion.div
-        style={{ y }}
+    <section className="relative overflow-hidden bg-black py-20 sm:py-28">
+      <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_30%,rgba(255,255,255,0.06),transparent_55%),radial-gradient(circle_at_85%_60%,rgba(255,255,255,0.04),transparent_50%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_30%,rgba(255,255,255,0.06),transparent_55%),radial-gradient(circle_at_85%_60%,rgba(255,255,255,0.04),transparent_50%)]"
       />
 
       <div className="relative mx-auto grid max-w-5xl grid-cols-1 items-center gap-10 px-6 sm:px-8 md:grid-cols-2">

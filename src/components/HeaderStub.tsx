@@ -1,6 +1,6 @@
 export function HeaderStub() {
   return (
-    <header className="relative z-30 flex flex-wrap items-center justify-between gap-2 bg-black px-4 py-3 text-white sm:px-8 sm:py-4">
+    <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-2 bg-black px-4 py-3 text-white sm:px-8 sm:py-4">
       <div>
         <p className="text-base font-bold tracking-tight sm:text-lg">
           SK <span className="font-normal">郭俯宏</span>
