@@ -7,7 +7,7 @@ export function HeaderStub() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-2 bg-black px-4 py-3 text-white sm:px-8 sm:py-4">
+    <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-2 bg-black px-6 py-3 text-white sm:px-12 sm:py-4 lg:px-16">
       <div>
         <p className="text-base font-bold tracking-tight sm:text-lg">
           SK <span className="font-normal">郭俯宏</span>
