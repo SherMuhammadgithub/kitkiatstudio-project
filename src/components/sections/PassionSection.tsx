@@ -1,3 +1,5 @@
+import { SectionTabs } from "@/components/SectionTabs";
+
 export function PassionSection() {
   return (
     <section
@@ -5,7 +7,7 @@ export function PassionSection() {
       style={{ backgroundImage: "url(/images/parallex-bg.jpg)" }}
     >
       <div className="relative mx-auto max-w-5xl px-6 sm:px-8">
-        <h2 className="font-script text-4xl leading-tight text-accent-yellow sm:text-5xl md:text-6xl">
+        <h2 className="font-script text-5xl font-bold leading-tight text-accent-yellow sm:text-6xl md:text-7xl">
           Passion, Inspiration,
           <br /> Freedom &amp; Dreams
         </h2>
@@ -22,10 +24,14 @@ export function PassionSection() {
           <span className="bg-zinc-300/70 px-2 py-0.5">美国NGH认证催眠师</span>
         </div>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <span className="rounded bg-black px-4 py-2 text-sm font-semibold text-white">音乐人</span>
-          <span className="rounded bg-black px-4 py-2 text-sm font-semibold text-white">作者</span>
+        <div className="mt-6 flex flex-wrap gap-4">
+          <span className="rounded bg-black px-6 py-3 text-base font-semibold text-white sm:text-lg">音乐人</span>
+          <span className="rounded bg-black px-6 py-3 text-base font-semibold text-white sm:text-lg">作者</span>
         </div>
+      </div>
+
+      <div className="absolute inset-y-0 right-16 z-[25] hidden overflow-hidden md:block lg:right-20">
+        <SectionTabs />
       </div>
     </section>
   );
